@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-dashboard
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pablo-rhods-tenant/opendatahub/odh-dashboard@sha256:be73fb5815a4e5d8803faddc1ddd0e6eab38eb185e7a4d7f2ffaad9b756b0d63
+        name: container-image
+        resources: {}
+status: {}
