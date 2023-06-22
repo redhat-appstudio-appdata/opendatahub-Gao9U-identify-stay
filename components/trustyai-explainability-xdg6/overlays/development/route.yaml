@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: trustyai-explainability-xdg6
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: trustyai-explainability-xdg6
+    app.kubernetes.io/part-of: opendatahub
+  name: trustyai-explainability-x1tz0
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: trustyai-explainability-xdg6
+    weight: 100
+status: {}

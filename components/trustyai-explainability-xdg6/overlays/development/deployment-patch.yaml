@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: trustyai-explainability-xdg6
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/pablo-rhods-tenant/opendatahub/trustyai-explainability-xdg6@sha256:293ac650cd283f4ea4126da3de2774bb4b76ec0809f23056ea78a3d610fe9cde
+        name: container-image
+        resources: {}
+status: {}
