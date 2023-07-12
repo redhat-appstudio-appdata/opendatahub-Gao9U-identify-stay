@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: trustyai-explainability-xdg6
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
